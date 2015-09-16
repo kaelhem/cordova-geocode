@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-geocode" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>CordovaGeocode</name>
+    <description>Retrieve coordinates from a given location</description>
+    <keywords>cordova,geocoding</keywords>
+
+    <js-module name="CordovaGeocode" src="www/CordovaGeocode.js">
+        <clobbers target="cordova.plugins.CordovaGeocode"/>
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CordovaGeocode">
+                <param name="ios-package" value="CDVCordovaGeocode"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVCordovaGeocode.h"/>
+        <source-file src="src/ios/CDVCordovaGeocode.m"/>
+        <framework src="MapKit.framework" />
+    </platform>
+</plugin>
