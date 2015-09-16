@@ -17,7 +17,7 @@
 - (void)geocodeString:(CDVInvokedUrlCommand*)command;
 {
     NSString* callbackId = command.callbackId;
-    BOOL areBusinessFiltered = [command.arguments objectAtIndex:1];
+    BOOL areBusinessFiltered = [[command.arguments objectAtIndex:1] boolValue];
     
     MKLocalSearchRequest* request = [[MKLocalSearchRequest alloc] init];
     request.naturalLanguageQuery = [command.arguments objectAtIndex:0];
@@ -33,9 +33,9 @@
 
             NSPredicate *noBusiness = [NSPredicate predicateWithFormat:@"business.uID == 0"];
             NSMutableArray *filteredItems = [response.mapItems mutableCopy];
-			      if([areBusinessFiltered boolValue] == YES) {
+			if (areBusinessFiltered) {
 	            [filteredItems filterUsingPredicate:noBusiness];
-	          }
+	        }
 
             MKPlacemark *place;
             NSDictionary *loc;
