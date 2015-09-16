@@ -1,0 +1,19 @@
+{
+  "name": "cordova-geocode",
+  "version": "0.0.1",
+  "description": "Retrieve lat/long coordinates from a given location",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaelhem/cordova-geocode.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Kaelhem <kaelhem@gmail.com> (https://github.com/kaelhem)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaelhem/cordova-geocode/issues"
+  },
+  "homepage": "https://github.com/kaelhem/cordova-geocode#readme"
+}
