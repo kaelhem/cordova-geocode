@@ -3,6 +3,8 @@
     <name>CordovaGeocode</name>
     <description>Retrieve coordinates from a given location</description>
     <keywords>cordova,geocoding</keywords>
+    <license>MIT</license>
+    <repo>https://github.com/kaelhem/cordova-geocode.git</repo>
 
     <js-module name="CordovaGeocode" src="www/CordovaGeocode.js">
         <clobbers target="cordova.plugins.CordovaGeocode"/>
