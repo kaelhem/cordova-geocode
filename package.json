@@ -8,7 +8,8 @@
   },
   "keywords": [
     "ecosystem:cordova",
-    "cordova-ios"
+    "cordova-ios",
+    "geocoding"
   ],
   "author": "Kaelhem <kaelhem@gmail.com> (https://github.com/kaelhem)",
   "license": "MIT",
