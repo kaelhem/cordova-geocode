@@ -1,6 +1,6 @@
 {
   "name": "cordova-geocode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Retrieve lat/long coordinates from a given location",
   "repository": {
     "type": "git",
